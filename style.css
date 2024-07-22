@@ -1,3 +1,238 @@
-h1 {
-    font-size: 20px;
+body {
+    background-color: #f0f0f0; /* 薄いグレー背景 */
+    color: #333;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+}
+
+/* セクション間の間隔を調整 */
+section {
+    margin-bottom: 50px;
+}
+
+/* ヘッダーのスタイルを調整 */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* メインコンテンツの位置を調整 */
+main {
+    margin-top: 100px; /* ヘッダーの高さに応じて調整 */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project {
+    margin-bottom: 20px;
+}.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0; /* アイコンの背景色 */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item span {
+    font-weight: bold;
+    text-align: center;
+}
+body {
+    background-color: #121212; /* ダークグレーの背景 */
+    color: #ffffff; /* 白のテキスト */
+}
+
+#skills {
+    background-color: #1e1e1e; /* より濃いグレーのセクション背景 */
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    padding: 20px;
+    background-color: #2a2a2a; /* スキルアイテムの背景 */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255,255,255,0.1);
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff; /* アイコンの背景を白に */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* アイコンが円の外にはみ出ないように */
+}
+
+.skill-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* アイコンのアスペクト比を保持 */
+}
+
+.skill-item span {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* テキストを白に */
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+body {
+    background-color: #121212; /* ダークグレーの背景 */
+    color: #ffffff; /* 白のテキスト */
+    margin: 0; /* ボディのマージンを削除 */
+    padding: 0; /* ボディのパディングを削除 */
+}
+
+header {
+    background-color: #1e1e1e; /* ヘッダーの背景色をダークテーマに合わせる */
+    color: #ffffff;
+    padding: 20px;
+    position: static; /* 固定位置を解除 */
+    box-shadow: none; /* 影を削除 */
+}
+
+nav {
+    background-color: #1e1e1e; /* ナビゲーションの背景色 */
+    padding: 10px 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 0; /* メインコンテンツの上マージンを削除 */
+    padding-top: 20px; /* 必要に応じて上部のパディングを追加 */
+}
+
+/* セクションのスタイルを調整 */
+.section {
+    padding: 40px 20px;
+    margin-bottom: 0; /* セクション間のマージンを削除 */
+}
+
+/* 最初のセクションの上部パディングを調整 */
+.section:first-child {
+    padding-top: 0;
 }
