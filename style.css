@@ -133,51 +133,68 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.skill-item {
+  }
+  
+  .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px;
+    width: 300px; /* 幅を広げて説明文を収納 */
     padding: 20px;
-    background-color: #2a2a2a; /* スキルアイテムの背景 */
+    background-color: #2a2a2a;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-item:hover {
+  }
+  
+  .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(255,255,255,0.1);
-}
-
-.skill-icon {
+  }
+  
+  .skill-icon {
     width: 80px;
     height: 80px;
-    background-color: #ffffff; /* アイコンの背景を白に */
+    background-color: #ffffff;
     border-radius: 50%;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* アイコンが円の外にはみ出ないように */
-}
-
-.skill-icon img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain; /* アイコンのアスペクト比を保持 */
-}
-
-.skill-item span {
+    overflow: hidden;
+  }
+  
+  .skill-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15%;
+  }
+  
+  .blender-icon img {
+    padding: 10%;
+  }
+  
+  .illustrator-icon img {
+    padding: 18%;
+  }
+  
+  .skill-item span {
     font-weight: bold;
     text-align: center;
-    color: #ffffff; /* テキストを白に */
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 18px;
     margin-top: 10px;
-}
-
+    margin-bottom: 15px;
+  }
+  
+  .skill-description {
+    color: #e0e0e0;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
 h2 {
     text-align: center;
     color: #ffffff;
