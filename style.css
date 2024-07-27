@@ -93,7 +93,7 @@ nav ul li {
   }
   
   .project-image {
-    width: 300px; /* または任意のサイズ */
+    width: 200px; /* または任意のサイズ */
     height: auto;
     margin-bottom: 20px;
     border-radius: 10px;
