@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -11,8 +15,9 @@ header {
     background-color: #1e1e1e;
     color: #ffffff;
     padding: 20px;
-    position: static;
-    box-shadow: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -38,7 +43,6 @@ nav ul li a {
 }
 
 main {
-    margin-top: 0;
     padding-top: 20px;
 }
 
@@ -181,6 +185,10 @@ h2 {
     font-style: italic;
     color: #aaa;
     text-align: left;
+}
+
+#3dcg-project, #illustrator-project {
+    scroll-margin-top: 80px; /* ヘッダーの高さに応じて調整 */
 }
 
 @media (min-width: 768px) {
