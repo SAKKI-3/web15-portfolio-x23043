@@ -73,6 +73,33 @@ h2 {
     transform: translateY(0);
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+}
+
 #skills {
     background-color: #1e1e1e;
     padding: 40px 20px;
@@ -197,7 +224,16 @@ h2 {
     scroll-margin-top: 80px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
     .project-content {
         flex-direction: column;
         align-items: center;
