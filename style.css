@@ -187,10 +187,12 @@ h2 {
     text-align: left;
 }
 
-#3dcg-project, #illustrator-project {
+#3dcg-project{
     scroll-margin-top: 80px; /* ヘッダーの高さに応じて調整 */
 }
-
+#illustrator-project {
+    scroll-margin-top: 80px; /* ヘッダーの高さに応じて調整 */
+}
 @media (min-width: 768px) {
     .project-content {
         flex-direction: column;
