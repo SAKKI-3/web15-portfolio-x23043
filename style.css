@@ -190,7 +190,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px; /* 幅を広げて説明文を収納 */
+    width: 300px;
     padding: 20px;
     background-color: #2a2a2a;
     border-radius: 15px;
@@ -238,6 +238,7 @@ body {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+  
   
   .skill-description {
     color: #e0e0e0;
